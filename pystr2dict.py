@@ -5,7 +5,7 @@ def dict2file( src, szfile ):
 
 def file2dict(szfile):
 
-  with open(szfile,mode='r') as f:
+  with open(szfile,mode='r',encoding='UTF-8') as f:
     cmd = 'temp_dict=' + f.read()
 
   exec( cmd )
